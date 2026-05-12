@@ -20,7 +20,10 @@ if [ ! -f "$DISK_PATH" ]; then
 fi
 
 # Remover VM antiga se existir para evitar conflitos
+echo "[*] Limpando configurações anteriores..."
 vboxmanage unregistervm "$VM_NAME" --delete 2>/dev/null
+# Forçar remoção da pasta se o unregister falhar em deletá-la
+rm -rf "$HOME/VirtualBox VMs/$VM_NAME"
 
 # 1. Criar a VM
 echo "[*] Criando máquina virtual..."
