@@ -9,7 +9,7 @@ MAC="000C2965F5F5"
 
 # Detectar o caminho real da pasta (mesmo rodando como root)
 BASE_DIR=$(dirname "$(readlink -f "$0")")
-DISK_PATH="$BASE_DIR/Diagbox9.91_64Bits_VM_PSA-DIAGBOX.COM.BR_(Rev.05)/HDD_9.91.vmdk"
+DISK_PATH="$BASE_DIR/Diagbox9.91_64Bits_VM_PSA-DIAGBOX.COM.BR_(Rev.05)/HDD_9.91.vdi"
 
 echo "[*] Iniciando configuração da VM no VirtualBox..."
 
